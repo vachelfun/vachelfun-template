@@ -2,8 +2,10 @@
   "compilerOptions": {
     "target": "ESNext",
     "useDefineForClassFields": true,
+    "composite": true,
     "module": "ESNext",
     "moduleResolution": "Node",
+    "allowSyntheticDefaultImports": true,
     "strict": true,
     "jsx": "preserve",
     "resolveJsonModule": true,
@@ -14,17 +16,14 @@
     "noEmit": true,
     "paths": {
       "@/*": ["./src/*"]
-    },
-    // "allowJs": true
+    }
   },
   "include": [
-    "**/*.js",
-    // "**/*.ts",
+    "vite.config.ts",
     "src/**/*.ts",
     "src/**/*.d.ts",
     "src/**/*.tsx",
     "src/**/*.vue"
-, ".config/cz-config.js"  ],
-  "references": [{ "path": "./tsconfig.node.json" }],
+  ],
   "exclude": ["node_modules"]
 }

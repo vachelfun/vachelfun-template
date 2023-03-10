@@ -8,10 +8,9 @@
     "build": "vue-tsc && vite build",
     "preview": "vite preview",
     "type-check": "vue-tsc --noEmit",
-    "lint:eslint": "eslint src/ --ext .vue,.js,.jsx,.ts,.tsx --fix --ignore-path .eslintignore",
+    "lint:eslint": "eslint src/ --ext .vue,.js,.jsx,.ts,.tsx --config .eslintrc.cjs --ignore-path .eslintignore --fix",
     "lint:style": "stylelint **/*.{vue,css,sass,scss} --fix",
-    "prettier": "prettier --config .prettierrc.yaml --write src/",
-    "commit":"git commit"
+    "prettier": "prettier --config .prettierrc.cjs --write src/"
   },
   "dependencies": {
     "vue": "^3.2.45"
