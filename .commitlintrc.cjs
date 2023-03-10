@@ -2,17 +2,17 @@ module.exports = {
   extends: ['@commitlint/config-conventional'],
   rules: {
     //自定义规则
-    'header-max-length-10': [2, 'always'],
+    //'header-max-length-10': [2, 'always'],
   },
   plugins: [
     {
       rules: {
         // 定义规则
-        'header-max-length-10': ({ header }) => {
-          const pass = header.length < 1
-          const message = `header 长度不能超过10个字符`
-          return [pass, message]
-        },
+        // 'header-max-length-10': ({ header }) => {
+        //   const pass = header.length < 1
+        //   const message = `header 长度不能超过10个字符`
+        //   return [pass, message]
+        // },
       },
     },
   ],
