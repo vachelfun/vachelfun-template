@@ -3,6 +3,7 @@ module.exports = {
   rules: {
     //自定义规则
     //'header-max-length-10': [2, 'always'],
+    
   },
   plugins: [
     {

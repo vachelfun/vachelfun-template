@@ -1,16 +1,21 @@
 {
-  "name": "admin",
+  "name": "template",
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "author": {
+    "name": "vachelfun",
+    "email": "vachelfun@gmail.com"
+  },
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc && vite build",
     "preview": "vite preview",
     "type-check": "vue-tsc --noEmit",
-    "lint:eslint": "eslint **/*.{vue,js,jsx,ts,tsx} --config .eslintrc.cjs --ignore-path .eslintignore --fix",
-    "lint:style": "stylelint **/*.{vue,css,sass,scss} --fix",
-    "prettier": "prettier --config .prettierrc.cjs --write src/"
+    "lint:eslint": "eslint src/*.{vue,js,jsx,ts,tsx} --config .eslintrc.cjs --ignore-path .eslintignore --fix",
+    "lint:style": "stylelint src/*.{vue,css,sass,scss} --fix",
+    "prettier": "prettier --config .prettierrc.cjs --write src/",
+    "prepare": "husky install"
   },
   "dependencies": {
     "vue": "^3.2.45"

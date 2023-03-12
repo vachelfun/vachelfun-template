@@ -24,5 +24,10 @@ module.exports = {
     'prettier/prettier': 'error',
     'import/no-extraneous-dependencies': 'off',
     'no-param-reassign': 'off',
+    /**
+     * 禁用未声明的变量，除非它们在 global  注释中被提到
+     * d.ts类型仅作全局定义 不混入代码
+     */
+    'no-undef': 'off',
   },
 }
