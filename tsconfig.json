@@ -24,7 +24,8 @@
     "src/**/*.d.ts",
     "src/**/*.tsx",
     "src/**/*.vue",
-    "build/**/*.ts"
+    "build/**/*.ts",
+    ".commitlintrc.cjs"
   ],
   "exclude": ["node_modules"]
 }

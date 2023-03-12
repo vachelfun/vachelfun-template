@@ -1,4 +1,6 @@
 #!/usr/bin/env sh
 . "$(dirname -- "$0")/_/husky.sh"
 
-exec < /dev/tty && npx cz --hook || true
+# 使用git commit；commitzen异常
+# 使用git cz 重复执行两次；先注释用git cz
+# exec < /dev/tty && npx cz --hook || true
