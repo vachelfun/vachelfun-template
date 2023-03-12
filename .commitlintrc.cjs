@@ -1,4 +1,3 @@
-// ts check
 /** @type {import('cz-git').UserConfig} */
 module.exports = {
   extends: ['@commitlint/config-conventional'],
@@ -11,11 +10,11 @@ module.exports = {
     alias: { fd: 'docs: fix typos' },
     /** 自定义命令行提问信息 */
     messages: {
-      type: '选择你要提交的类型 :',
-      scope: '选择一个提交范围（可选）:',
-      customScope: '请输入自定义的提交范围 :',
+      type: '选择提交的类型 :',
+      scope: '选择提交影响的范围（可选）:',
+      customScope: '请输入自定义影响范围 :',
       subject: '填写简短精炼的变更描述 :\n',
-      body: '填写更加详细的变更描述（可选）。使用 "|" 换行 :\n',
+      body: '填写详细的变更描述（可选）。使用 "|" 换行 :\n',
       breaking: '列举非兼容性重大的变更（可选）。使用 "|" 换行 :\n',
       footerPrefixesSelect: '选择关联issue前缀（可选）:',
       customFooterPrefix: '输入自定义issue前缀 :',
@@ -87,13 +86,13 @@ module.exports = {
     /** 设置终端交互部件的主题色 */
     themeColorCode: '',
     /** 自定义选择 模块范围 命令行显示信息 */
-    scopes: [],
+    scopes: ['@types', 'router', 'store'],
     /** 是否在选择 模块范围 显示自定义选项(custom) */
     allowCustomScopes: true,
     /** 是否在选择 模块范围 显示为空选项(empty) */
     allowEmptyScopes: true,
     /** 设置 选择范围 中 为空选项(empty) 和 自定义选项(custom) 的 位置 */
-    customScopesAlign: 'bottom',
+    customScopesAlign: 'top',
     /** 自定义 选择范围 中 自定义选项(custom) 在命令行中显示的 名称 */
     customScopesAlias: 'custom',
     /** 自定义 选择范围 中 为空选项(empty) 在命令行中显示的 名称 */
@@ -109,7 +108,7 @@ module.exports = {
     /** 详细描述(body)和重大变更(BREAKING CHANGES)中换行字符 */
     breaklineChar: '|',
     /** 自定义选择指定的问题不显示 */
-    skipQuestions: ['breaking', 'footerPrefix', 'footer'],
+    skipQuestions: ["footerPrefix","footer"],
     /** 自定义选择issue前缀 */
     issuePrefixes: [
       // 如果使用 gitee 作为开发管理
